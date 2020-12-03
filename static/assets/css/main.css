@@ -2228,11 +2228,11 @@ input, input:before, input:after {
     color: #727c8e;
     font-size: 12px;
     font-weight: 400;
-    /*cursor: pointer;*/
+    /*cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
     outline: none !important;
     text-align: center;
 }
