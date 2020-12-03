@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Progresol</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./static/assets/img/Icono/favicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./static/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./static/assets/css/main.css" />
+
+
+    <meta property="og:url" content="https://www.progresol.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="https://www.progresol.com/Content/assets/img/logo.png" />
+
+</head>
+<body class="p-0">
+
+    <div>
+        <div class="main container-fluid bg-3">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center flex-lg-row justify-content-center justify-content-md-around">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="comprar-cemento p-4">
+
+                            <p class="comprar-cemento__title">Seleccionar productos</p>
+
+                            <div class="seleccionar-productos">
+                                <div class="d-flex flex-column align-items-center mt-4" id="checkProducto">
+
+
+                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-start px-4 py-4 py-md-0 mb-2 seleccionar-productos__product w-100">
+                                        <div class="d-flex">
+                                            <div class="input-checkbox d-flex align-items-center px-2">
+                                                <svg class="inline-svg">
+                                                    <symbol id="check" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </symbol>
+                                                </svg>
+
+                                                <input id="100-1" class="inp-cbx" type="checkbox" />
+
+                                                <label class="cbx m-0" for="100-1">
+                                                    <span>
+                                                        <svg width="12px" height="10px">
+                                                            <use xlink:href="#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="seleccionar-productos__img">
+                                                <img src="./static/assets/img/000000001500000206.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-md-start justify-content-center flex-sm-row align-items-center flex-1 o8K3lsz">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;font-weight:bold;">CEMENTO</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">NombreProducto</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">TipoProducto</p>
+                                            </div>
+                                            <div class="d-flex w-100">
+                                                <p class="seleccionar-productos__description w-100 text-sm-right">
+                                                    UnidadMedidaProducto
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column align-items-center align-items-md-end justify-content-center px-2 mt-2 mt-md-0 bp8kdl2">
+                                            <div>
+                                                <div class="seleccionar-productos__contador">
+                                                    <button id="contador-restar"
+                                                            onclick="restarContador(1)"
+                                                            class="seleccionar-productos__less mr-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__less-v"></div>
+                                                        </div>
+                                                    </button>
+
+                                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="1" id="contador-cantidad-1"
+                                                            class="seleccionar-productos__quantity" value="0" disabled />
+
+                                                    <button id="contador-sumar"
+                                                            onclick="sumarContador('100', 1)"
+                                                            class="seleccionar-productos__more ml-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__more-v"></div>
+                                                            <div class="seleccionar-productos__more-h"></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <p class="seleccionar-productos__bolsas w-100 text-center mt-1">Bolsas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-start px-4 py-4 py-md-0 mb-2 seleccionar-productos__product w-100">
+                                        <div class="d-flex">
+                                            <div class="input-checkbox d-flex align-items-center px-2">
+                                                <svg class="inline-svg">
+                                                    <symbol id="check" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </symbol>
+                                                </svg>
+
+                                                <input id="101-2" class="inp-cbx" type="checkbox" />
+
+                                                <label class="cbx m-0" for="101-2">
+                                                    <span>
+                                                        <svg width="12px" height="10px">
+                                                            <use xlink:href="#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="seleccionar-productos__img">
+                                                <img src="./static/assets/img/000000001500000206.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-md-start justify-content-center flex-sm-row align-items-center flex-1 o8K3lsz">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;font-weight:bold;">CEMENTO</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">NombreProducto</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">TipoProducto</p>
+                                            </div>
+                                            <div class="d-flex w-100">
+                                                <p class="seleccionar-productos__description w-100 text-sm-right">
+                                                    UnidadMedidaProducto
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column align-items-center align-items-md-end justify-content-center px-2 mt-2 mt-md-0 bp8kdl2">
+                                            <div>
+                                                <div class="seleccionar-productos__contador">
+                                                    <button id="contador-restar"
+                                                            onclick="restarContador(2)"
+                                                            class="seleccionar-productos__less mr-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__less-v"></div>
+                                                        </div>
+                                                    </button>
+
+                                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="1" id="contador-cantidad-2"
+                                                            class="seleccionar-productos__quantity" value="0" disabled />
+
+                                                    <button id="contador-sumar"
+                                                            onclick="sumarContador('101', 2)"
+                                                            class="seleccionar-productos__more ml-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__more-v"></div>
+                                                            <div class="seleccionar-productos__more-h"></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <p class="seleccionar-productos__bolsas w-100 text-center mt-1">Bolsas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-start px-4 py-4 py-md-0 mb-2 seleccionar-productos__product w-100">
+                                        <div class="d-flex">
+                                            <div class="input-checkbox d-flex align-items-center px-2">
+                                                <svg class="inline-svg">
+                                                    <symbol id="check" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </symbol>
+                                                </svg>
+
+                                                <input id="102-3" class="inp-cbx" type="checkbox" />
+
+                                                <label class="cbx m-0" for="102-3">
+                                                    <span>
+                                                        <svg width="12px" height="10px">
+                                                            <use xlink:href="#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="seleccionar-productos__img">
+                                                <img src="./static/assets/img/000000001500000206.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-md-start justify-content-center flex-sm-row align-items-center flex-1 o8K3lsz">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;font-weight:bold;">CEMENTO</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">NombreProducto</p>
+                                                <p class="seleccionar-productos__name" style="white-space: nowrap;">TipoProducto</p>
+                                            </div>
+                                            <div class="d-flex w-100">
+                                                <p class="seleccionar-productos__description w-100 text-sm-right">
+                                                    UnidadMedidaProducto
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column align-items-center align-items-md-end justify-content-center px-2 mt-2 mt-md-0 bp8kdl2">
+                                            <div>
+                                                <div class="seleccionar-productos__contador">
+                                                    <button id="contador-restar"
+                                                            onclick="restarContador(3)"
+                                                            class="seleccionar-productos__less mr-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__less-v"></div>
+                                                        </div>
+                                                    </button>
+
+                                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="1" id="contador-cantidad-3"
+                                                            class="seleccionar-productos__quantity" value="0" disabled />
+
+                                                    <button id="contador-sumar"
+                                                            onclick="sumarContador('102', 3)"
+                                                            class="seleccionar-productos__more ml-2">
+                                                        <div class="position-relative">
+                                                            <div class="seleccionar-productos__more-v"></div>
+                                                            <div class="seleccionar-productos__more-h"></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <p class="seleccionar-productos__bolsas w-100 text-center mt-1">Bolsas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning alert-dismissible fade show" id="success-alert" role="alert" style="display:none;">
+                                <strong class="alertTitle"></strong> <span class="alertDescription"></span>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <link rel="stylesheet" href="./static/lib/slick/slick.css" />
+    <link rel="stylesheet" href="./static/assets/css/main.css" />
+    <script type="text/javascript" src="./static/assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./static/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./static/lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./static/assets/js/slider.js"></script>
+
+    
+    <script src="./static/assets/js/main.js"></script>
+    <script src="./static/assets/js/Productos.js"></script>
+    <script src="./static/assets/js/Progresol.js"></script>
+</body>
+</html>
