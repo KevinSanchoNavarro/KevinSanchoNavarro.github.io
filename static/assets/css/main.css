@@ -371,6 +371,14 @@
         text-decoration: underline;
     }
 
+input, input:before, input:after {
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+} 
+
 /* App */
 .main {
     min-height: calc(100vh - 36px);
