@@ -81,8 +81,8 @@
                                                         </div>
                                                     </button>
 
-                                                    <input type="text" minlength="1" id="contador-cantidad-1"
-                                                            class="seleccionar-productos__quantity" value="0" />
+                                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="1" id="contador-cantidad-1"
+                                                            class="seleccionar-productos__quantity" value="0" disabled />
 
                                                     <button id="contador-sumar"
                                                             onclick="sumarContador('100', 1)"
